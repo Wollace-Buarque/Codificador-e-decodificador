@@ -11,7 +11,7 @@ label {
     font-size: 26px;
 }
 
-form textarea {
+textarea {
     display: block;
 
     color: rgba(255, 255, 255, 0.7);
@@ -22,7 +22,7 @@ form textarea {
     padding: 15px 15px 15px 15px;
 }
 
-form textarea:focus {
+textarea:focus {
     border-radius: 10px;
 
     outline: none;
@@ -91,8 +91,16 @@ button:hover {
 
     opacity: 0;
     transition: 1s;
+}
 
+#overflow {
+    width: 250px;
+    height: 180px;
+
+    overflow-wrap: break-word;
     overflow-y: scroll;
+
+    margin: 0.5em 0;
 }
 
 ::-webkit-scrollbar {

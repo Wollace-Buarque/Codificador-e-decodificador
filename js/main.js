@@ -44,7 +44,7 @@ function checkParameters(element) {
     var text = element.value
 
     if (!text) {
-        warn('O texto não pode estar limpo!', 1000, '#warn', '#warnText')
+        warn('O campo do texto não pode estar limpo!', 1000, '#warn', '#warnText')
         return
     }
 
@@ -72,7 +72,7 @@ function showDecryptResult(text) {
 function copyResult() {
     navigator.clipboard.writeText(document.querySelector('#resultText').textContent)
 
-    warn('O texto foi copiado com sucesso!', 1000, '#result', '#resultText')
+    warn('O texto foi copiado com sucesso!', 1000, '#warn', '#warnText')
 }
 
 
@@ -87,7 +87,6 @@ encryptButton.addEventListener('click', event => {
     if (!checkParameters(textElement)) return
 
     showEncryptResult(textElement.value)
-
 })
 
 decryptButton.addEventListener('click', event => {
@@ -96,7 +95,6 @@ decryptButton.addEventListener('click', event => {
     if (!checkParameters(textElement)) return
     
     showDecryptResult(textElement.value)
-
 })
 
 copyButton.addEventListener('click', event => {
