@@ -66,7 +66,7 @@ function showEncryptResult(text) {
 }
 
 function showDecryptResult(text) {
-    warn(encrypt(text), 10000, '#result', '#resultText')
+    warn(decrypt(text), 10000, '#result', '#resultText')
 }
 
 function copyResult() {
