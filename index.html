@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador e decodificador de texto</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <div id="container">
+
+        <div id="warn">
+            <h1 style="color: #bf94ff;">AVISO</h1>
+            <p id="warnText"></p>
+        </div>
+
+        <div>
+            <form>
+
+                <fieldset>
+    
+                    <legend>Encriptação</legend>
+    
+                    <div>
+    
+                        <label>Digite o texto para ser encriptado ou desencriptado:</label>
+                        <textarea id="text" cols="75" rows="10"></textarea>
+    
+                    </div>
+    
+                </fieldset>
+    
+                <button type="submit" id="encryptButton">ENCRIPTAR</button>
+                <button type="submit" id="decryptButton">DESENCRIPTAR</button>
+    
+            </form>
+        </div>
+
+        <div id="result">
+            <h1 style="color: #bf94ff;">RESULTADO</h1>
+            <p id="resultText"></p>
+            <button id="copyButton">COPIAR</button>
+        </div>
+
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>
